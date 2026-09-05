@@ -1,6 +1,6 @@
-# StudyQuest (code brakers)
+# Plan4U (code brakers)
 
-StudyQuest is a multi-page, gamified study planner built with HTML, CSS, and vanilla JavaScript.
+Plan4U is a multi-page, gamified study planner built with HTML, CSS, and vanilla JavaScript.
 It helps students plan syllabus topics, manage tasks, run Pomodoro sessions, and track learning progress with analytics and XP-based progression.
 
 ## Table of Contents
@@ -19,8 +19,7 @@ It helps students plan syllabus topics, manage tasks, run Pomodoro sessions, and
 12. [License](#license)
 
 ## Overview
-
-StudyQuest is designed as a client-side web app with no backend dependency for core usage.
+Plan4U is designed as a client-side web app with no backend dependency for core usage.
 All app state is persisted in the browser using `localStorage`, which enables quick startup and offline-friendly behavior for most interactions.
 
 The app includes:
@@ -47,12 +46,12 @@ The app includes:
 
 ## Pages and User Flow
 
-### 1) Landing (`studyquest/index.html`)
+### 1) Landing (`Plan4U/index.html`)
 
 - Product intro and CTA to open the app (`dashboard.html`)
 - Animated hero, feature highlights, and stats counter
 
-### 2) Dashboard (`studyquest/dashboard.html`)
+### 2) Dashboard (`Plan4U/dashboard.html`)
 
 - Shows daily stats:
   - Study hours today
@@ -63,14 +62,14 @@ The app includes:
 - Shows badges and next badge indicator
 - Provides motivational quotes and quick-action shortcuts
 
-### 3) Planner (`studyquest/planner.html`)
+### 3) Planner (`Plan4U/planner.html`)
 
 - Step 1: Upload syllabus file or paste text
 - Step 2: Review parsed output (course name, exam date, topics, difficulty, hours)
 - Step 3: Generate and view schedule (weekly and daily views)
 - Supports marking slots as done/skipped and shows topic completion tracking
 
-### 4) Tasks (`studyquest/tasks.html`)
+### 4) Tasks (`Plan4U/tasks.html`)
 
 - Create, edit, delete, and filter tasks
 - Complete task flow opens verification modal:
@@ -78,7 +77,7 @@ The app includes:
   - Media upload proof (file type and size checks)
   - Optional skip verification with reduced XP reward
 
-### 5) Analytics (`studyquest/analytics.html`)
+### 5) Analytics (`Plan4U/analytics.html`)
 
 - Summary cards for total hours, completed tasks, streak, and XP
 - Charts:
@@ -93,7 +92,7 @@ The app includes:
 ```text
 Tech-Titans/
 	README.md
-	studyquest/
+	Plan4U/
 		analytics.html
 		dashboard.html
 		index.html
@@ -126,19 +125,19 @@ Tech-Titans/
 
 App state is persisted using these keys (defined in `js/app.js`):
 
-- `studyquest_xp`
-- `studyquest_level`
-- `studyquest_streak`
-- `studyquest_tasks`
-- `studyquest_subjects`
-- `studyquest_schedule`
-- `studyquest_sessions`
-- `studyquest_badges`
-- `studyquest_last_active`
-- `studyquest_schedules_generated`
-- `studyquest_total_study_hours`
-- `studyquest_courses` (planner-specific)
-- `studyquest_timer_widget` (floating timer widget state)
+- `Plan4U_xp`
+- `Plan4U_level`
+- `Plan4U_streak`
+- `Plan4U_tasks`
+- `Plan4U_subjects`
+- `Plan4U_schedule`
+- `Plan4U_sessions`
+- `Plan4U_badges`
+- `Plan4U_last_active`
+- `Plan4U_schedules_generated`
+- `Plan4U_total_study_hours`
+- `Plan4U_courses` (planner-specific)
+- `Plan4U_timer_widget` (floating timer widget state)
 
 ### Example data shapes
 
@@ -235,7 +234,7 @@ This is a static frontend project.
 
 ### Option A: Open directly
 
-1. Navigate to `studyquest/`.
+1. Navigate to `Plan4U/`.
 2. Open `index.html` in your browser.
 
 ### Option B: Serve with a local static server (recommended)
@@ -243,7 +242,7 @@ This is a static frontend project.
 Using Python:
 
 ```bash
-cd studyquest
+cd Plan4U
 python -m http.server 5500
 ```
 
